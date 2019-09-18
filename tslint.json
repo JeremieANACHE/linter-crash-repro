@@ -1,0 +1,82 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint-config-prettier",
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "indent": [true, "spaces", 2],
+    "semicolon": true,
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "object-curly-spacing": [true, "always", { "arraysInObjects": true, "objectsInObjects": true }],
+    "import-name": false,
+    "function-name": [ true, { "function-regex": "^[A-z][\\w\\d]+$" } ],
+    "variable-name": [true, "allow-pascal-case"],
+    "max-line-length": [true, { "limit": 140, "ignore-pattern": "\\s.(it\\('|test\\(')|function\\s.+\\(.+\\).+{" }],
+    "object-shorthand-properties-first": false,
+    "arrow-return-shorthand": [true, "multiline"],
+    "no-consecutive-blank-lines": [true, 1],
+    "no-redundant-jsdoc": true,
+    "no-unnecessary-initializer": true,
+    "number-literal-format": true,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "one-line": [true, "check-catch", "check-finally", "check-else"],
+    "space-within-parens": [true, 0],
+    "switch-final-break": [true, "always"],
+    "no-inferrable-types": true,
+    "no-parameter-reassignment": true,
+    "unified-signatures": true,
+    "ban-comma-operator": true,
+    "no-conditional-assignment": true,
+    "no-console": true,
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": true,
+    "no-dynamic-delete": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-for-in-array": true,
+    "no-invalid-template-strings": true,
+    "no-shadowed-variable": true,
+    "no-return-await": true,
+    "no-sparse-arrays": true,
+    "no-string-literal": true,
+    "no-unnecessary-class": true,
+    "prefer-conditional-expression": true,
+    "radix": true,
+    "restrict-plus-operands": true,
+    "switch-default": true,
+    "use-isnan": true,
+    "cyclomatic-complexity": [true, 8],
+    "prefer-array-literal": false,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "trailing-comma": [true, {"multiline": "never", "singleline": "never"}]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}
